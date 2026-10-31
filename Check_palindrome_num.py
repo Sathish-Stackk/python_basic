@@ -1,0 +1,9 @@
+num = 121
+original = num
+reverse = 0
+
+while num > 0:
+    reverse = reverse * 10 + num % 10
+    num //= 10
+
+print("Palindrome" if original == reverse else "Not Palindrome")
